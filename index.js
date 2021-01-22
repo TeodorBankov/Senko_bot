@@ -11,13 +11,13 @@ bot.help((ctx) => ctx.reply('Send me a sticker'));
 bot.on('sticker', (ctx) => ctx.reply('*Thumbs up*'));
 bot.hears('hi', (ctx) => ctx.reply('Hey there'));
 bot.hears('nigga', (ctx) => ctx.reply('Buy-buy'));
-bot.hears('owo', async (ctx) => {
-    let url = await neko.nsfw.neko();
-  ctx.replyWithPhoto(url);
-});
-bot.command('owo', async (ctx) => {
-    let url = await neko.nsfw.neko();
-  ctx.replyWithPhoto(url);
+
+fs.readdir("commands", (_, files) => {
+    let commandFiles = files.filter(f => f.endsWith(".js"));
+    commandFiles.forEach(commandFile => {
+        let command = require(__dirname + "/commands/" + commandFile);
+        command.run(bot);
+    })
 });
 
 bot.launch();
