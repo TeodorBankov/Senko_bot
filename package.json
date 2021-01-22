@@ -1,0 +1,29 @@
+{
+  "name": "senko_bot",
+  "version": "1.0.0",
+  "description": "Hentai bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeodorBankov/Senko_bot.git"
+  },
+  "keywords": [
+    "Hentai",
+    "Telegram"
+  ],
+  "author": "Teodor Bankov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TeodorBankov/Senko_bot/issues"
+  },
+  "homepage": "https://github.com/TeodorBankov/Senko_bot#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "fs": "^0.0.1-security",
+    "nekos.life": "^2.0.7",
+    "telegraf": "^4.0.1"
+  }
+}
