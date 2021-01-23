@@ -20,17 +20,17 @@ In the index.js file, you must replace the (INSERT YOUR BOT TOKEN HERE) with you
 const bot = new telebot(INSERT YOUR BOT TOKEN HERE);
 ```
 
-##Run
+## Run
 
 Command for running the bot:
 
 ```bash
 node .
 ```
-##Contributing
+## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
-##License 
+## License 
 Coming soon!
