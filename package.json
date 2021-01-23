@@ -25,6 +25,7 @@
     "dotenv": "^8.2.0",
     "fs": "^0.0.1-security",
     "nekos.life": "^2.0.7",
+    "reddit-fetch": "^1.5.1",
     "telebot": "^1.4.1"
   }
 }

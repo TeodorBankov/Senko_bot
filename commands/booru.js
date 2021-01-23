@@ -11,7 +11,9 @@ module.exports = {
             let urls = (await fetch_url(args[0], args[1], args[2])).posts.map(p => p.fileUrl);
             for (i of urls) {
                 try {
-                    setTimeout(msg.reply.photo(i), 800)
+                    setTimeout(
+                        console.log(i),
+                        msg.reply.photo(i), 800)
                 } catch (e) { console.error(e) };
                 // if (/\.swf/.test(i) || /\.webm/.test(i) || /\.gif/.test(i)) {
                 //     try {
