@@ -10,7 +10,7 @@ fs.readdir("commands", (_, files) => {
         try {
             command.run(bot);
         }
-        catch (e) { }
+        catch (e) {console.error(e)}
     })
 });
 
