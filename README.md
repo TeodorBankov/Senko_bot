@@ -20,7 +20,8 @@ In the index.js file, you must replace the (INSERT YOUR BOT TOKEN HERE) with you
 const bot = new telebot(INSERT YOUR BOT TOKEN HERE);
 ```
 
-Next, in every command file, you havbe to replace the originals Senko_bot tag with yours
+Next, in every command file, you havbe to replace the originals Senko_bot tag with yours.
+Lets take the /help command for this instance: 
 
 ```javascript
 bot.on(/^\/help(@Senko_kitsune_bot)?/, async (msg) => {
