@@ -21,6 +21,7 @@ const bot = new telebot(INSERT YOUR BOT TOKEN HERE);
 ```
 
 Next, in every command file, you havbe to replace the originals Senko_bot tag with yours.
+
 Lets take the /help command for this instance: 
 
 ```javascript
