@@ -25,6 +25,7 @@ const bot = new telebot(INSERT YOUR BOT TOKEN HERE);
 Command for running the bot:
 
 ```bash
+cd Senko_bot
 node .
 ```
 ## Contributing
@@ -33,4 +34,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## License 
-Coming soon!
+MIT
