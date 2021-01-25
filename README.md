@@ -6,7 +6,7 @@ This is an open source bot, which can do a variety of things, like:
 3. Search and provide media from subreddit from reddit.com
 
 ## Installation
-To install and run senko_bot, you must firstly create a bot from Botfather in Telegram and aquire the token, then:
+To install and run Senko_bot, you must firstly create a bot from Botfather in Telegram and aquire the token, then:
 
 ```bash
 sudo apt install node && npm
@@ -18,6 +18,13 @@ In the index.js file, you must replace the (INSERT YOUR BOT TOKEN HERE) with you
 
 ```javascript
 const bot = new telebot(INSERT YOUR BOT TOKEN HERE);
+```
+
+Next, in every command file, you havbe to replace the originals Senko_bot tag with yours
+
+```javascript
+bot.on(/^\/help(@Senko_kitsune_bot)?/, async (msg) => {
+//replace @Senko_kitsune_bot with your bots username
 ```
 
 ## Run
