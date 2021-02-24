@@ -7,7 +7,7 @@ module.exports = {
     async run(bot){
         bot.on(/^\/music(@Senko_kitsune_bot)?(.+)?/, async (msg, props) => {
             const args = props.match[0].split(' ').splice(1).join(' ');
-            const searchResult = await ytsearcher.search(args, {type: args, maxResults: 1000, topicId: args});
+            const searchResult = await ytsearcher.search(args, {type: 'video', maxResults: 1000, topicId: args});
             msg.reply.text(searchResult.currentPage[Math.floor(Math.random()* searchResult.currentPage.length)].url);
         })
     }
